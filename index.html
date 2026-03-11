@@ -13,7 +13,7 @@
         body{
             background-color: grey;
             padding: 10px;
-            margin: 0px;
+            margin: 0;
             justify-content:center;
             display: flex;
 
@@ -47,20 +47,19 @@
         bottom: 10px;
         right: 10px;
         border: 2px solid black;
+          overlow:hidden;
       }
       .logo img{
         width: 100%;
         height: 100%;
         border-radius: 50%;
+          object-fit:cover;
       }
       .box1{
         width: 100%;
         height: 50px;
         border: 2px solid black;
         background-color: white;
-        margin: 10px;
-        margin: 0;
-        padding: 0;
         background-color: rgb(170, 50, 156);
         border-radius: 10px;
 
@@ -72,10 +71,10 @@
       .row{
           flex-wrap:wrap;
         display: flex;
-        margin-top: 2px;
+         justify-content:center;
       }
       .box2,.box3{
-        width:48%;
+        width:45%;
         height: 200px;
         margin:5px;
         margin-right: 10px;
@@ -89,10 +88,11 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
+          border-radius:7px;
       }
 
       .box4{
-         width: 95%;
+         width: 90%;
        min-height: 200px;
         margin:20px auto;
         border: 2px solid black;
@@ -110,6 +110,28 @@
          height:auto;
          display:block;
      }
+        @media (max-width:600px){
+
+  .box{
+    max-width:100%;
+    height:auto;
+  }
+
+  .row{
+    flex-direction:column;
+    align-items:center;
+  }
+
+  .box2,.box3{
+    width:90%;
+    height:200px;
+  }
+
+  .box4{
+    width:90%;
+  }
+
+}
 
     </style>
 </head>
@@ -142,4 +164,5 @@
 </body>
 
 </html>
+
 
